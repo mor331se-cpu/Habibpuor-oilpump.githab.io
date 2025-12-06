@@ -1,56 +1,407 @@
-<p>support@habibpomp.ir</p>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراشکاری و اوایل پمپ سازی حبیب‌پور</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Tahoma, sans-serif; }
+        body { background: #f0f2f5; color: #333; }
+        
+        .header { 
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        .logo { 
+            font-size: 2.8rem; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .tagline { 
+            font-size: 1.2rem; 
+            opacity: 0.9; 
+            margin-top: 10px;
+        }
+        
+        .nav { 
+            background: #2c3e50; 
+            padding: 15px; 
+            text-align: center; 
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav a { 
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 25px; 
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .nav a:hover { 
+            background: #3498db; 
+            transform: translateY(-2px);
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+        
+        .section { 
+            background: white; 
+            padding: 30px; 
+            margin: 25px 0; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-right: 5px solid #3498db;
+        }
+        .section h2 { 
+            color: #2c3e50; 
+            margin-bottom: 20px; 
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .contact-item {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-item i {
+            color: #1a237e;
+            font-size: 1.2rem;
+            width: 30px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .product-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .product-item:hover {
+            border-color: #3498db;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+}
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+        
+        /* موبایل */
+        @media (max-width: 768px) {
+            .nav { flex-direction: column; align-items: center; }
+            .nav a { width: 90%; text-align: center; margin: 5px 0; }
+            .logo { font-size: 2rem; }
+            .section { padding: 20px; }
+        }
+        
+        /* اسکرول نرم */
+        html { scroll-behavior: smooth; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- هدر -->
+    <header class="header">
+        <h1 class="logo">🏭 حبیب‌پور</h1>
+        <p class="tagline">تراشکاری و اوایل پمپ سازی | از سال ۱۳۷۵</p>
+        <p style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+            کیفیت، دقت، تعهد
+        </p>
+    </header>
+    
+    <!-- منو -->
+    <nav class="nav">
+        <a href="#home"><i class="fas fa-home"></i> خانه</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> درباره ما</a>
+        <a href="#services"><i class="fas fa-cogs"></i> خدمات</a>
+        <a href="#products"><i class="fas fa-box"></i> محصولات</a>
+        <a href="#contact"><i class="fas fa-phone"></i> تماس</a>
+        <a href="#gallery"><i class="fas fa-images"></i> گالری</a>
+    </nav>
+    
+    <!-- محتوا -->
+    <div class="container">
+        <!-- خانه -->
+        <section id="home" class="section">
+            <h2><i class="fas fa-home"></i> خانه | خوش آمدید</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                به کارگاه تراشکاری و اوایل پمپ سازی <strong>حبیب‌پور</strong> خوش آمدید.<br>
+                با بیش از <strong>۲۵ سال سابقه</strong> در صنعت، مفتخریم که بخشی از چرخه تولید کشور هستیم.
+            </p>
+            
+            <div style="background: #e8f5e9; padding: 20px; border-radius: 10px; margin-top: 25px;">
+                <h3 style="color: #2e7d32;"><i class="fas fa-bolt"></i> خدمات فوری ما:</h3>
+                <div style="display: flex; gap: 20px; margin-top: 15px; flex-wrap: wrap;">
+                    <div>✅ تعمیرات اورژانسی</div>
+                    <div>✅ پشتیبانی ۲۴ ساعته</div>
+                    <div>✅ خدمات سیار</div>
+                    <div>✅ گارانتی یکساله</div>
                 </div>
             </div>
         </section>
-    </div>
-
-    <!-- فوتر -->
-    <footer>
-        <div class="container">
-            <div style="margin-bottom: 20px;">
-                <h3>کارگاه تراشکاری و پمپ‌سازی حبیب‌پور</h3>
-                <p>مفتخریم که بخشی از صنعت ایران هستیم</p>
+        
+        <!-- درباره ما -->
+        <section id="about" class="section">
+            <h2><i class="fas fa-info-circle"></i> درباره ما</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center;">
+                <div>
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">تاریخچه کارگاه</h3>
+                    <p>کارگاه حبیب‌پور فعالیت خود را از سال <strong>۱۳۷۵</strong> با یک دستگاه تراش کوچک آغاز کرد.</p>
+                    <p>در سال <strong>۱۳۸۵</strong> بخش پمپ‌سازی اضافه شد و امروز به یکی از کارگاه‌های معتبر منطقه تبدیل شده‌ایم.</p>
+                    
+                    <div style="display: flex; gap: 30px; margin-top: 25px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; color: #1a237e; font-weight: bold;">۲۵+</div>
+                            <div>سال تجربه</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; color: #1a237e; font-weight: bold;">۵۰۰+</div>
+                            <div>مشتری راضی</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; color: #1a237e; font-weight: bold;">۱۰۰۰+</div>
+                            <div>پروژه موفق</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #f5f5f5; padding: 25px; borde
+r-radius: 10px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">تجهیزات ما</h3>
+                    <ul style="list-style: none; padding-right: 0;">
+                        <li>✅ دستگاه تراش پیشرفته</li>
+                        <li>✅ ماشین‌آلات CNC</li>
+                        <li>✅ دستگاه فرز</li>
+                        <li>✅ تجهیزات پمپ‌سازی</li>
+                        <li>✅ دستگاه بالانس روتور</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- خدمات -->
+        <section id="services" class="section">
+            <h2><i class="fas fa-cogs"></i> خدمات ما</h2>
+            <p>ما این خدمات تخصصی را ارائه می‌دهیم:</p>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3><i class="fas fa-cog"></i> تراشکاری</h3>
+                    <p>• تولید قطعات صنعتی</p>
+                    <p>• شفت‌سازی با دقت بالا</p>
+                    <p>• ساخت فلنج و بوش</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-tint"></i> پمپ‌سازی</h3>
+                    <p>• ساخت پمپ صنعتی</p>
+                    <p>• تعمیر پمپ‌های آب</p>
+                    <p>• سرویس پمپ هیدرولیک</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-wrench"></i> تعمیرات</h3>
+                    <p>• تعمیرات اورژانسی</p>
+                    <p>• بازسازی قطعات</p>
+                    <p>• تعویض یاتاقان</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- محصولات -->
+        <section id="products" class="section">
+            <h2><i class="fas fa-box"></i> محصولات ما</h2>
+            <p>برخی از محصولات تولیدی کارگاه:</p>
+            
+            <div class="products-grid">
+                <div class="product-item">
+                    <div style="font-size: 3rem; color: #3498db; margin-bottom: 15px;">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>شفت صنعتی</h3>
+                    <p>شفت فولادی با دقت بالا</p>
+                    <p style="color: #27ae60; font-weight: bold; margin-top: 10px;">
+                        قیمت: از ۵۰۰,۰۰۰ تومان
+                    </p>
+                </div>
+                
+                <div class="product-item">
+                    <div style="font-size: 3rem; color: #3498db; margin-bottom: 15px;">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3>فلنج استیل</h3>
+                    <p>فلنج در سایزهای مختلف</p>
+                    <p style="color: #27ae60; font-weight: bold; margin-top: 10px;">
+                        قیمت: از ۳۰۰,۰۰۰ تومان
+                    </p>
+                </div>
+                
+                <div class="product-item">
+                    <div style="font-size: 3rem; color: #3498db; margin-bottom: 15px;">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>پمپ سانتریفیوژ</h3>
+                    <p>پمپ انتقال آب صنعتی</p>
+                    <p style="color: #e74c3c; font-weight: bold; margin-top: 10px;">
+                        قیمت: درخواستی
+                    </p>
+                </div>
             </div>
             
-            <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-telegram"></i></a>
-                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="color: #666; font-style: italic;">
+                    <i class="fas fa-info-circle"></i>
+                    برای مشاهده لیست کامل محصولات و قیمت‌ها تماس بگیرید
+                </p>
+            </div>
+        </section>
+        
+        <!-- تماس -->
+        <section id="contact" class="section">
+            <h2><i class="fas fa-phone"></i> تماس با ما</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>آدرس کارگاه:</strong><br>
+تهران، شهرک صنعتی، خیابان صنعت، پلاک ۱۵
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>تلفن‌های تماس:</strong><br>
+                        دفتر: ۰۲۱-۷۷۷۷۸۸۸۸ | پشتیبانی: ۰۲۱-۷۷۷۷۹۹۹۹
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <strong>موبایل:</strong><br>
+                        ۰۹۱۲-۱۲۳-۴۵۶۷ (مدیریت - آقای حبیب‌پور)
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>ساعات کاری:</strong><br>
+                        شنبه تا چهارشنبه: ۸:۰۰ تا ۱۸:۰۰<br>
+                        پنجشنبه: ۸:۰۰ تا ۱۳:۰۰ | جمعه: تعطیل
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>ایمیل:</strong><br>
+                        info@habibpoor.com
+                    </div>
+                </div>
             </div>
             
-            <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">
-                © ۱۴۰۳ - کلیه حقوق برای کارگاه حبیب‌پور محفوظ است
+            <!-- دکمه واتس‌اپ -->
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://wa.me/989121234567" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> ارتباط سریع از طریق واتس‌اپ
+                </a>
+            </div>
+        </section>
+        
+        <!-- گالری -->
+        <section id="gallery" class="section">
+            <h2><i class="fas fa-images"></i> گالری تصاویر</h2>
+            <p style="text-align: center; padding: 40px 20px; color: #666; background: #f8f9fa; border-radius: 10px;">
+                <i class="fas fa-camera" style="font-size: 3rem; color: #ddd; margin-bottom: 20px; display: block;"></i>
+                عکس‌های کارگاه به زودی بارگذاری می‌شود<br>
+                برای مشاهده عکس‌های واقعی، با ما در تماس باشید
             </p>
+        </section>
+    </div>
+    
+    <!-- فوتر -->
+    <footer class="footer">
+        <p style="font-size: 1.2rem; margin-bottom: 15px;">کارگاه تراشکاری و اوایل پمپ سازی حبیب‌پور</p>
+        <p>تهران، شهرک صنعتی | تلفن: ۰۲۱-۷۷۷۷۸۸۸۸</p>
+        <p style="margin-top: 20px; opacity: 0.8;">
+            © ۱۴۰۳ - تمامی حقوق محفوظ است | طراحی شده با ❤️ برای صنعت ایران
+        </p>
+        
+        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 20px;">
+            <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-telegram"></i></a>
+            <a href="https://wa.me/989121234567" style="color: white; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
-
-    <script>
-        // پیام‌های متغیر در هدر
-        const messages = [
-            "کیفیت، تضمین ماست",
-            "۲۵ سال تجربه در خدمت صنعت",
-            "پشتیبانی ۲۴ ساعته", 
-            "تعمیرات اورژانسی"
-        ];
-        
-        let messageIndex = 0;
-        const sloganElement = document.querySelector('.slogan');
-        
-        if(sloganElement) {
-            setInterval(() => {
-                sloganElement.style.opacity = '0.5';
-                setTimeout(() => {
-                    messageIndex = (messageIndex + 1) % messages.length;
-                    sloganElement.textContent = messages[messageIndex];
-                    sloganElement.style.opacity = '1';
-                }, 300);
-            }, 4000);
-        }
-        
-        // رفع مشکل هش در برخی مرورگرها
-        window.addEventListener('hashchange', function() {
-            window.scrollTo(0, 0);
-        });
-    </script>
 </body>
 </html>
+
