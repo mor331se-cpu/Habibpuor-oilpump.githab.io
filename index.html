@@ -1,23 +1,5 @@
-<h3>ساعات کاری</h3>
-                    <p>شنبه تا چهارشنبه: ۸:۰۰ - ۱۷:۰۰</p>
-                    <p>پنجشنبه: ۸:۰۰ - ۱۳:۰۰</p>
+<p>support@habibpomp.ir</p>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>ایمیل</h3>
-                    <p>info@habibpomp.ir</p>
-                    <p>support@habibpomp.ir</p>
-                </div>
-            </div>
-            
-            <!-- نقشه -->
-            <div style="margin-top: 40px; text-align: center;">
-                <h3><i class="fas fa-map"></i> موقعیت ما روی نقشه</h3>
-                <div style="height: 250px; background: #e0e0e0; border-radius: 8px; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
-                    <p>📍 نقشه گوگل اینجا قرار می‌گیرد</p>
-                </div>
-                <p style="margin-top: 10px; color: #7f8c8d;">برای مسیریابی، آدرس را در نقشه گوگل وارد کنید</p>
             </div>
         </section>
     </div>
@@ -43,39 +25,32 @@
     </footer>
 
     <script>
-        // اسکرول نرم برای منو
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 70,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // نمایش پیام در هدر
+        // پیام‌های متغیر در هدر
         const messages = [
             "کیفیت، تضمین ماست",
             "۲۵ سال تجربه در خدمت صنعت",
-            "پشتیبانی ۲۴ ساعته",
+            "پشتیبانی ۲۴ ساعته", 
             "تعمیرات اورژانسی"
         ];
         
         let messageIndex = 0;
         const sloganElement = document.querySelector('.slogan');
         
-        setInterval(() => {
-            sloganElement.style.opacity = '0.5';
-            setTimeout(() => {
-                messageIndex = (messageIndex + 1) % messages.length;
-                sloganElement.textContent = messages[messageIndex];
-                sloganElement.style.opacity = '1';
-            }, 500);
-        }, 4000);
+        if(sloganElement) {
+            setInterval(() => {
+                sloganElement.style.opacity = '0.5';
+                setTimeout(() => {
+                    messageIndex = (messageIndex + 1) % messages.length;
+                    sloganElement.textContent = messages[messageIndex];
+                    sloganElement.style.opacity = '1';
+                }, 300);
+            }, 4000);
+        }
+        
+        // رفع مشکل هش در برخی مرورگرها
+        window.addEventListener('hashchange', function() {
+            window.scrollTo(0, 0);
+        });
     </script>
 </body>
 </html>
